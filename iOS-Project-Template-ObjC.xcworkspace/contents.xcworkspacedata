@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CommunityModule/CommunityModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ExploreModule/ExploreModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HomepageModule/HomepageModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UserModule/UserModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Basics/Basics.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Utilities/Utilities.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DPApp/DPApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
