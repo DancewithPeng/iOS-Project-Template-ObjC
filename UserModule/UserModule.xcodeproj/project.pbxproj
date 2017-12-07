@@ -20,7 +20,7 @@
 		6E4939B81FD81E6A0073788B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939B61FD81E6A0073788B /* User.m */; };
 		6E4939D01FD825FA0073788B /* LoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939CE1FD825FA0073788B /* LoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4939D11FD825FA0073788B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939CF1FD825FA0073788B /* LoginController.m */; };
-		6E4939DA1FD831540073788B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939DB1FD831540073788B /* Utilities.framework */; };
+		6E4939DA1FD831540073788B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939DB1FD831540073788B /* Utilities.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6E4939DE1FD8326D0073788B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939DD1FD8326D0073788B /* Images.xcassets */; };
 		6E4939E51FD838AF0073788B /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939E41FD838AF0073788B /* Demo.storyboard */; };
 /* End PBXBuildFile section */

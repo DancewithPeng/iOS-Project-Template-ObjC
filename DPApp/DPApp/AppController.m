@@ -32,7 +32,7 @@
 }
 
 - (void)start {
-    if ([User currentUser].isLogin == NO) {
+    if ([User currentUser].isLogin == YES) {
         [self showMain];
     } else {
         [self showLogin];

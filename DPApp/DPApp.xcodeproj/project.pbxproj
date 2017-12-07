@@ -20,8 +20,10 @@
 		6E4939281FD818070073788B /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939261FD818070073788B /* GuideViewController.xib */; };
 		6E49392B1FD818470073788B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E49392A1FD818470073788B /* MainViewController.m */; };
 		6E4939B31FD81C0F0073788B /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939B21FD81C0F0073788B /* AppController.m */; };
-		6E4939BA1FD81F950073788B /* UserModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939B91FD81F950073788B /* UserModule.framework */; };
-		6E4939BB1FD81F950073788B /* UserModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939B91FD81F950073788B /* UserModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6EA9C70E1FD97EE100282F72 /* UserModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA9C70D1FD97EE100282F72 /* UserModule.framework */; };
+		6EA9C70F1FD97EE100282F72 /* UserModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA9C70D1FD97EE100282F72 /* UserModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6EA9C7111FD97EE100282F72 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA9C7101FD97EE100282F72 /* Utilities.framework */; };
+		6EA9C7121FD97EE100282F72 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA9C7101FD97EE100282F72 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		773043ACC935CCB551F1F3D2 /* Pods_DPAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5313A30D968D61FC765C99F /* Pods_DPAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +51,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6E4939BB1FD81F950073788B /* UserModule.framework in Embed Frameworks */,
+				6EA9C70F1FD97EE100282F72 /* UserModule.framework in Embed Frameworks */,
+				6EA9C7121FD97EE100282F72 /* Utilities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +86,8 @@
 		6E49392A1FD818470073788B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		6E4939B11FD81C0F0073788B /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		6E4939B21FD81C0F0073788B /* AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		6E4939B91FD81F950073788B /* UserModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UserModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA9C70D1FD97EE100282F72 /* UserModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UserModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA9C7101FD97EE100282F72 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7667E7134BA1FC044A3DA049 /* Pods_DPApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C684E273EBA411E1373BC8 /* Pods-DPAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-DPAppTests/Pods-DPAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5313A30D968D61FC765C99F /* Pods_DPAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4939BA1FD81F950073788B /* UserModule.framework in Frameworks */,
 				59864F8F64629A6E43FD028D /* Pods_DPApp.framework in Frameworks */,
+				6EA9C7111FD97EE100282F72 /* Utilities.framework in Frameworks */,
+				6EA9C70E1FD97EE100282F72 /* UserModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +125,8 @@
 		6E24E2E91FD8139F00A90C45 = {
 			isa = PBXGroup;
 			children = (
-				6E4939B91FD81F950073788B /* UserModule.framework */,
+				6EA9C7101FD97EE100282F72 /* Utilities.framework */,
+				6EA9C70D1FD97EE100282F72 /* UserModule.framework */,
 				6E24E2F41FD8139F00A90C45 /* DPApp */,
 				6E24E30D1FD813A000A90C45 /* DPAppTests */,
 				6E24E3181FD813A000A90C45 /* DPAppUITests */,

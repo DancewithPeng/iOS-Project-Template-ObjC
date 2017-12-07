@@ -1,0 +1,6 @@
+framework module Utilities {
+  umbrella header "Utilities.h"
+
+  export *
+  module * { export * }
+}
