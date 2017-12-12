@@ -56,9 +56,9 @@
     
     NSLog(@"%@", CurrentBundle);
     
-    LoginController *loginController = [[LoginController alloc] initWithNavigationController:self.navigationController];
-    [loginController start];
-    [self.childControllers addObject:loginController];
+    SignInController *signInController = [[SignInController alloc] initWithNavigationController:self.navigationController];
+    [signInController start];
+    [self.childControllers addObject:signInController];
 }
 
 - (NSMutableArray *)childControllers {

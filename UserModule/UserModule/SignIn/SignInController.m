@@ -1,33 +1,33 @@
 //
-//  LoginController.m
+//  SignInController.m
 //  UserModule
 //
-//  Created by DancewithPeng on 2017/12/6.
+//  Created by DancewithPeng on 2017/12/13.
 //  Copyright © 2017年 dancewithpeng@gmail.com. All rights reserved.
 //
 
-#import "LoginController.h"
-#import "LoginViewController.h"
-#import <Utilities/Utilities.h>
+#import "SignInController.h"
+#import "SignInViewController.h"
 
-@interface LoginController ()
+@interface SignInController ()
 
 @property (nonatomic, strong) UINavigationController *navigationController;
 
 @end
 
-@implementation LoginController
+@implementation SignInController
 
 - (instancetype)initWithNavigationController:(UINavigationController *)navigationController {
     if (self = [super init]) {
         self.navigationController = navigationController;
     }
+    
     return self;
 }
 
 - (void)start {
-    LoginViewController *loginVC = [LoginViewController viewControllerWithNib];
-    [self.navigationController pushViewController:loginVC animated:YES];
+    SignInViewController *signInVC = [[SignInViewController alloc] init];
+    [self.navigationController pushViewController:signInVC animated:YES];
 }
 
 @end

@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3972851FE043CA00EA8559 /* SignInController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972831FE043CA00EA8559 /* SignInController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E3972861FE043CA00EA8559 /* SignInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972841FE043CA00EA8559 /* SignInController.m */; };
+		6E39728A1FE043E100EA8559 /* SignInViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972871FE043E100EA8559 /* SignInViewController.h */; };
+		6E39728B1FE043E100EA8559 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972881FE043E100EA8559 /* SignInViewController.m */; };
+		6E39728C1FE043E100EA8559 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3972891FE043E100EA8559 /* SignInViewController.xib */; };
+		6E3972901FE043F400EA8559 /* SignUpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E39728D1FE043F400EA8559 /* SignUpViewController.h */; };
+		6E3972911FE043F400EA8559 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E39728E1FE043F400EA8559 /* SignUpViewController.m */; };
+		6E3972921FE043F400EA8559 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E39728F1FE043F400EA8559 /* SignUpViewController.xib */; };
+		6E3972951FE0440400EA8559 /* SignUpController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972931FE0440400EA8559 /* SignUpController.h */; };
+		6E3972961FE0440400EA8559 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972941FE0440400EA8559 /* SignUpController.m */; };
 		6E49390B1FD816F10073788B /* UserModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939011FD816F10073788B /* UserModule.framework */; };
 		6E4939101FD816F10073788B /* UserModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E49390F1FD816F10073788B /* UserModuleTests.m */; };
 		6E4939121FD816F10073788B /* UserModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939041FD816F10073788B /* UserModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E4939211FD817EE0073788B /* LoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E49391E1FD817EE0073788B /* LoginViewController.h */; };
-		6E4939221FD817EE0073788B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E49391F1FD817EE0073788B /* LoginViewController.m */; };
-		6E4939231FD817EE0073788B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939201FD817EE0073788B /* LoginViewController.xib */; };
 		6E4939AE1FD81AC60073788B /* PersonalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939AB1FD81AC60073788B /* PersonalViewController.h */; };
 		6E4939AF1FD81AC60073788B /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939AC1FD81AC60073788B /* PersonalViewController.m */; };
 		6E4939B01FD81AC60073788B /* PersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939AD1FD81AC60073788B /* PersonalViewController.xib */; };
 		6E4939B71FD81E6A0073788B /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939B51FD81E6A0073788B /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4939B81FD81E6A0073788B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939B61FD81E6A0073788B /* User.m */; };
-		6E4939D01FD825FA0073788B /* LoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939CE1FD825FA0073788B /* LoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E4939D11FD825FA0073788B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939CF1FD825FA0073788B /* LoginController.m */; };
 		6E4939DA1FD831540073788B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939DB1FD831540073788B /* Utilities.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6E4939DE1FD8326D0073788B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939DD1FD8326D0073788B /* Images.xcassets */; };
 		6E4939E51FD838AF0073788B /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939E41FD838AF0073788B /* Demo.storyboard */; };
@@ -36,23 +41,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E3972831FE043CA00EA8559 /* SignInController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInController.h; sourceTree = "<group>"; };
+		6E3972841FE043CA00EA8559 /* SignInController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInController.m; sourceTree = "<group>"; };
+		6E3972871FE043E100EA8559 /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		6E3972881FE043E100EA8559 /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		6E3972891FE043E100EA8559 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		6E39728D1FE043F400EA8559 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		6E39728E1FE043F400EA8559 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		6E39728F1FE043F400EA8559 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		6E3972931FE0440400EA8559 /* SignUpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
+		6E3972941FE0440400EA8559 /* SignUpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
 		6E4939011FD816F10073788B /* UserModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4939041FD816F10073788B /* UserModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModule.h; sourceTree = "<group>"; };
 		6E4939051FD816F10073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E49390A1FD816F10073788B /* UserModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E49390F1FD816F10073788B /* UserModuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModuleTests.m; sourceTree = "<group>"; };
 		6E4939111FD816F10073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E49391E1FD817EE0073788B /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		6E49391F1FD817EE0073788B /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		6E4939201FD817EE0073788B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		6E4939AB1FD81AC60073788B /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		6E4939AC1FD81AC60073788B /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		6E4939AD1FD81AC60073788B /* PersonalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalViewController.xib; sourceTree = "<group>"; };
 		6E4939B51FD81E6A0073788B /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		6E4939B61FD81E6A0073788B /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		6E4939C31FD8221F0073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E4939CE1FD825FA0073788B /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
-		6E4939CF1FD825FA0073788B /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		6E4939DB1FD831540073788B /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4939DD1FD8326D0073788B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6E4939E41FD838AF0073788B /* Demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
@@ -105,7 +115,8 @@
 				6E4939B41FD81E5D0073788B /* Model */,
 				6E4939041FD816F10073788B /* UserModule.h */,
 				6E4939051FD816F10073788B /* Info.plist */,
-				6E49391D1FD817C00073788B /* Login */,
+				6E7C7ED21FE03C6F0021C005 /* SignUp */,
+				6E49391D1FD817C00073788B /* SignIn */,
 				6E4939AA1FD81AA00073788B /* Personal */,
 			);
 			path = UserModule;
@@ -120,16 +131,14 @@
 			path = UserModuleTests;
 			sourceTree = "<group>";
 		};
-		6E49391D1FD817C00073788B /* Login */ = {
+		6E49391D1FD817C00073788B /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				6E49391E1FD817EE0073788B /* LoginViewController.h */,
-				6E49391F1FD817EE0073788B /* LoginViewController.m */,
-				6E4939201FD817EE0073788B /* LoginViewController.xib */,
-				6E4939CE1FD825FA0073788B /* LoginController.h */,
-				6E4939CF1FD825FA0073788B /* LoginController.m */,
+				6E3972831FE043CA00EA8559 /* SignInController.h */,
+				6E3972841FE043CA00EA8559 /* SignInController.m */,
+				6E7C7EDE1FE03D020021C005 /* ViewControllers */,
 			);
-			path = Login;
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		6E4939AA1FD81AA00073788B /* Personal */ = {
@@ -176,6 +185,36 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6E7C7ED21FE03C6F0021C005 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				6E3972931FE0440400EA8559 /* SignUpController.h */,
+				6E3972941FE0440400EA8559 /* SignUpController.m */,
+				6E7C7EDD1FE03CF40021C005 /* ViewControllers */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		6E7C7EDD1FE03CF40021C005 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E39728D1FE043F400EA8559 /* SignUpViewController.h */,
+				6E39728E1FE043F400EA8559 /* SignUpViewController.m */,
+				6E39728F1FE043F400EA8559 /* SignUpViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6E7C7EDE1FE03D020021C005 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E3972871FE043E100EA8559 /* SignInViewController.h */,
+				6E3972881FE043E100EA8559 /* SignInViewController.m */,
+				6E3972891FE043E100EA8559 /* SignInViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -183,11 +222,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3972851FE043CA00EA8559 /* SignInController.h in Headers */,
+				6E3972901FE043F400EA8559 /* SignUpViewController.h in Headers */,
+				6E39728A1FE043E100EA8559 /* SignInViewController.h in Headers */,
 				6E4939121FD816F10073788B /* UserModule.h in Headers */,
+				6E3972951FE0440400EA8559 /* SignUpController.h in Headers */,
 				6E4939B71FD81E6A0073788B /* User.h in Headers */,
-				6E4939D01FD825FA0073788B /* LoginController.h in Headers */,
 				6E4939AE1FD81AC60073788B /* PersonalViewController.h in Headers */,
-				6E4939211FD817EE0073788B /* LoginViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +313,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3972921FE043F400EA8559 /* SignUpViewController.xib in Resources */,
+				6E39728C1FE043E100EA8559 /* SignInViewController.xib in Resources */,
 				6E4939DE1FD8326D0073788B /* Images.xcassets in Resources */,
 				6E4939B01FD81AC60073788B /* PersonalViewController.xib in Resources */,
-				6E4939231FD817EE0073788B /* LoginViewController.xib in Resources */,
 				6E4939E51FD838AF0073788B /* Demo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E39728B1FE043E100EA8559 /* SignInViewController.m in Sources */,
+				6E3972911FE043F400EA8559 /* SignUpViewController.m in Sources */,
 				6E4939AF1FD81AC60073788B /* PersonalViewController.m in Sources */,
-				6E4939D11FD825FA0073788B /* LoginController.m in Sources */,
-				6E4939221FD817EE0073788B /* LoginViewController.m in Sources */,
 				6E4939B81FD81E6A0073788B /* User.m in Sources */,
+				6E3972861FE043CA00EA8559 /* SignInController.m in Sources */,
+				6E3972961FE0440400EA8559 /* SignUpController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
