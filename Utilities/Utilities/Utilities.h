@@ -19,3 +19,5 @@ FOUNDATION_EXPORT const unsigned char UtilitiesVersionString[];
 #import <Utilities/UIViewController+FrameworkNib.h>
 #import <Utilities/UIImage+FrameworkNib.h>
 #import <Utilities/FlowController.h>
+#import <Utilities/BaseFlowController.h>
+#import <Utilities/UIViewController+ShowChildViewController.h>

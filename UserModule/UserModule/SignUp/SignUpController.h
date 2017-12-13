@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Utilities/FlowController.h>
+#import <Utilities/BaseFlowController.h>
 
-@interface SignUpController : NSObject <FlowController>
+@interface SignUpController : BaseFlowController
 
 @end

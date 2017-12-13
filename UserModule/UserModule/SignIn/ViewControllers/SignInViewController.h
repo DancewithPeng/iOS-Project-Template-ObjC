@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^SignInFinished)(BOOL isSuccess, NSError *error);
+
+@protocol SignInViewControllerDelegate <NSObject>
+
+- (void)signInWithUsername:(NSString *)username password:(NSString *)password finished:(SignInFinished)finishedHanlder;
+
+- (void)signUp;
+
+@end
+
 @interface SignInViewController : UIViewController
+
+@property (nonatomic, weak) id<SignInViewControllerDelegate> delegate;
+@property (nonatomic, copy) NSString *defaultUsername;
+@property (nonatomic, copy) NSString *defaultPassword;
 
 @end

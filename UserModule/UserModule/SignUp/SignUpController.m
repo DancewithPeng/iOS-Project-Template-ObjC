@@ -7,23 +7,17 @@
 //
 
 #import "SignUpController.h"
+#import "SignUpViewController.h"
 
 @interface SignUpController ()
-
-@property (nonatomic, strong) NSMutableArray<FlowController> *childControllers;
-
-@property (nonatomic, strong) NSArray<NSString *> *test;
 
 @end
 
 @implementation SignUpController
 
 - (void)start {
-    
-}
-
-- (void)addChildController:(id<FlowController>)childController {
-    [self.childControllers addObject:childController];
+    SignUpViewController *signUpVC = [[SignUpViewController alloc] init];
+    [self.navigationController pushViewController:signUpVC animated:YES];
 }
 
 @end

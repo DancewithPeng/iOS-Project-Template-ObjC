@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Utilities/BaseFlowController.h>
 
-@interface AppController : NSObject
-
-- (instancetype)initWithNavigationController:(UINavigationController *)navigationController;
-
-- (void)start;
+@interface AppController : BaseFlowController
 
 @end

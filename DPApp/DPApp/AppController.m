@@ -17,19 +17,9 @@
 
 @interface AppController ()
 
-@property (nonatomic, strong) UINavigationController *navigationController;
-@property (nonatomic, strong) NSMutableArray *childControllers;
-
 @end
 
 @implementation AppController
-
-- (instancetype)initWithNavigationController:(UINavigationController *)navigationController {
-    if (self = [super init]) {
-        self.navigationController = navigationController;
-    }
-    return self;
-}
 
 - (void)start {
     if ([User currentUser].isLogin == YES) {
@@ -40,11 +30,13 @@
 }
 
 - (void)showMain {
-    MainViewController *mainVC = [[MainViewController alloc] init];
-    [self.navigationController pushViewController:mainVC animated:NO];
     
+    MainViewController *mainVC = [[MainViewController alloc] init];
+    [self.baseViewController showChildViewController:mainVC];
+//    [self.navigationController pushViewController:mainVC animated:NO];
+//
     [[AFHTTPSessionManager manager] GET:@"https://www.baidu.com" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        
+
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@", responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -55,18 +47,9 @@
 - (void)showLogin {
     
     NSLog(@"%@", CurrentBundle);
-    
-    SignInController *signInController = [[SignInController alloc] initWithNavigationController:self.navigationController];
+    SignInController *signInController = [[SignInController alloc] initWithBaseViewController:self.baseViewController];
+    [self addChildController:signInController];
     [signInController start];
-    [self.childControllers addObject:signInController];
-}
-
-- (NSMutableArray *)childControllers {
-    if (_childControllers == nil) {
-        _childControllers = [[NSMutableArray alloc] init];
-    }
-    
-    return _childControllers;
 }
 
 @end
