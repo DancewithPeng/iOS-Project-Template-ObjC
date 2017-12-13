@@ -15,6 +15,14 @@
     return u;
 }
 
+#pragma mark - NSCopying
+
+- (id)copyWithZone:(NSZone *)zone {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+    User *user = [[User alloc] init];
+    return user;
+}
+
 #pragma mark - Setter & Getter
 
 - (BOOL)isLogin {

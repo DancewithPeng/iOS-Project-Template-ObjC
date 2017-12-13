@@ -13,6 +13,8 @@
 		6E24E3401FD8145C00A90C45 /* UtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24E33F1FD8145C00A90C45 /* UtilitiesTests.m */; };
 		6E24E3421FD8145C00A90C45 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E24E3341FD8145B00A90C45 /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3972991FE0467A00EA8559 /* FlowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972981FE0467A00EA8559 /* FlowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E3972A21FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972A01FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E3972A31FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972A11FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m */; };
 		6E3CAFD51FE10E92007CD1E4 /* BaseFlowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3CAFD31FE10E92007CD1E4 /* BaseFlowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3CAFD61FE10E92007CD1E4 /* BaseFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3CAFD41FE10E92007CD1E4 /* BaseFlowController.m */; };
 		6E3CAFDD1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3CAFDB1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +48,8 @@
 		6E24E33F1FD8145C00A90C45 /* UtilitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilitiesTests.m; sourceTree = "<group>"; };
 		6E24E3411FD8145C00A90C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E3972981FE0467A00EA8559 /* FlowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowController.h; sourceTree = "<group>"; };
+		6E3972A01FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationControllerSequence.h"; sourceTree = "<group>"; };
+		6E3972A11FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationControllerSequence.m"; sourceTree = "<group>"; };
 		6E3CAFD31FE10E92007CD1E4 /* BaseFlowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseFlowController.h; sourceTree = "<group>"; };
 		6E3CAFD41FE10E92007CD1E4 /* BaseFlowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseFlowController.m; sourceTree = "<group>"; };
 		6E3CAFDB1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShowChildViewController.h"; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				6E4939D61FD82F260073788B /* UIViewController+FrameworkNib.m */,
 				6E3CAFDB1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h */,
 				6E3CAFDC1FE12023007CD1E4 /* UIViewController+ShowChildViewController.m */,
+				6E3972A01FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h */,
+				6E3972A11FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 				6E4939D71FD82F260073788B /* UIViewController+FrameworkNib.h in Headers */,
 				6E3CAFD51FE10E92007CD1E4 /* BaseFlowController.h in Headers */,
 				6E3972991FE0467A00EA8559 /* FlowController.h in Headers */,
+				6E3972A21FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h in Headers */,
 				6E4939E81FD840A50073788B /* CurrentBundle.h in Headers */,
 				6E3CAFDD1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h in Headers */,
 				6E24E3421FD8145C00A90C45 /* Utilities.h in Headers */,
@@ -407,6 +414,7 @@
 				6E3CAFDE1FE12023007CD1E4 /* UIViewController+ShowChildViewController.m in Sources */,
 				6E4939D81FD82F260073788B /* UIViewController+FrameworkNib.m in Sources */,
 				6E3CAFD61FE10E92007CD1E4 /* BaseFlowController.m in Sources */,
+				6E3972A31FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

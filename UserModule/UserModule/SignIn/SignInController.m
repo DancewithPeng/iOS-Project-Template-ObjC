@@ -12,8 +12,9 @@
 
 #import <Utilities/UIViewController+ShowChildViewController.h>
 #import <Utilities/UIViewController+FrameworkNib.h>
+#import <Basics/DPNavigationController.h>
 
-@interface SignInController () <SignInViewControllerDelegate>
+@interface SignInController () <SignInViewControllerDelegate, SignUpControllerDelegate>
 
 @property (nonatomic, weak) SignInViewController *signInVC;
 
@@ -27,7 +28,7 @@
     signInVC.defaultUsername = @"哈哈哈";
     signInVC.defaultPassword = @"略略略";
     signInVC.delegate = self;
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:signInVC];
+    DPNavigationController *nav = [[DPNavigationController alloc] initWithRootViewController:signInVC];
     [self.baseViewController showChildViewController:nav];
     self.signInVC = signInVC;
 }
@@ -43,8 +44,20 @@
 
 - (void)signUp {
     SignUpController *signUp = [[SignUpController alloc] initWithBaseViewController:self.signInVC.navigationController];
+    signUp.delegate = self;
     [self addChildController:signUp];
     [signUp start];
+}
+
+#pragma mark - SignUpControllerDelegate
+
+- (void)signUpController:(SignUpController *)signUpVC completion:(BOOL)isSucceed withInfo:(NSDictionary *)info {
+    if (isSucceed) {
+        self.signInVC.defaultUsername = info[@"username"];
+        self.signInVC.defaultPassword = info[@"password"];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+    [self removeChildController:signUpVC];
 }
 
 @end

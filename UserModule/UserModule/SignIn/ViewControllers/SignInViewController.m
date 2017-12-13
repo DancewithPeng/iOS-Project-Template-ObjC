@@ -17,9 +17,16 @@
 
 @implementation SignInViewController
 
+
+#pragma mark - Life Cycle Methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"登陆";
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
     self.usernameTF.text = self.defaultUsername;
     self.passwordTF.text = self.defaultPassword;
@@ -30,9 +37,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)signInBtnDidClicked:(id)sender {
     if ([self.delegate respondsToSelector:@selector(signInWithUsername:password:finished:)]) {
-        [self.delegate signInWithUsername:@"Hello" password:@"World" finished:^(BOOL isSuccess, NSError *error) {
+        [self.delegate signInWithUsername:self.usernameTF.text password:self.passwordTF.text finished:^(BOOL isSuccess, NSError *error) {
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"登陆成功" preferredStyle:UIAlertControllerStyleAlert];
             
             [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {

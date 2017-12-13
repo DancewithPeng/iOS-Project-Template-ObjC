@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <Utilities/BaseFlowController.h>
 
+@class SignUpController;
+@protocol SignUpControllerDelegate <NSObject>
+
+- (void)signUpController:(SignUpController *)signUpVC completion:(BOOL)isSucceed withInfo:(NSDictionary *)info;
+
+@end
+
 @interface SignUpController : BaseFlowController
+
+@property (nonatomic, weak) id<SignUpControllerDelegate> delegate;
 
 @end

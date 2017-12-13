@@ -10,6 +10,10 @@
 
 @interface SignUpViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *usernameTF;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTF;
+@property (weak, nonatomic) IBOutlet UILabel *supplementaryLabel;
+
 @end
 
 @implementation SignUpViewController
@@ -18,21 +22,33 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"注册";
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)supplementaryBtnDidClicked:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(supplementSignUpInformationWithCompletionHandler:)]) {
+        [self.delegate supplementSignUpInformationWithCompletionHandler:^(BOOL isCancel, NSDictionary *info) {
+            
+        }];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)signUpBtnClicked:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(signUpWithUsername:password:completionHandler:)]) {
+        [self.delegate signUpWithUsername:self.usernameTF.text password:self.passwordTF.text completionHandler:nil];
+    }
 }
-*/
+
+
+#pragma mark - Setter
+
+- (void)setSupplementary:(NSString *)supplementary {
+    if (_supplementary != supplementary) {
+        _supplementary = [supplementary copy];
+        
+        self.supplementaryLabel.text = supplementary;
+    }
+}
+
 
 @end

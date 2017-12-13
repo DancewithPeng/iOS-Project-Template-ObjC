@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3972A71FE188C500EA8559 /* DPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972A51FE188C500EA8559 /* DPNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E3972A81FE188C500EA8559 /* DPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972A61FE188C500EA8559 /* DPNavigationController.m */; };
 		6E4938E71FD816680073788B /* Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4938DD1FD816680073788B /* Basics.framework */; };
 		6E4938EC1FD816680073788B /* BasicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4938EB1FD816680073788B /* BasicsTests.m */; };
 		6E4938EE1FD816680073788B /* Basics.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4938E01FD816680073788B /* Basics.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E3972A51FE188C500EA8559 /* DPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPNavigationController.h; sourceTree = "<group>"; };
+		6E3972A61FE188C500EA8559 /* DPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPNavigationController.m; sourceTree = "<group>"; };
 		6E4938DD1FD816680073788B /* Basics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Basics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4938E01FD816680073788B /* Basics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Basics.h; sourceTree = "<group>"; };
 		6E4938E11FD816680073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E3972A41FE1889000EA8559 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				6E3972A51FE188C500EA8559 /* DPNavigationController.h */,
+				6E3972A61FE188C500EA8559 /* DPNavigationController.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 		6E4938D31FD816680073788B = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +86,7 @@
 			children = (
 				6E4938E01FD816680073788B /* Basics.h */,
 				6E4938E11FD816680073788B /* Info.plist */,
+				6E3972A41FE1889000EA8559 /* NavigationController */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -93,6 +107,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3972A71FE188C500EA8559 /* DPNavigationController.h in Headers */,
 				6E4938EE1FD816680073788B /* Basics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3972A81FE188C500EA8559 /* DPNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
