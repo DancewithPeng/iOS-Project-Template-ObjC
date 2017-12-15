@@ -27,7 +27,7 @@
 /**
  基础视图控制器
  */
-@property (nonatomic, strong, readonly) UIViewController    *baseViewController;
+@property (nonatomic, weak, readonly) UIViewController *baseViewController;
 
 
 /**

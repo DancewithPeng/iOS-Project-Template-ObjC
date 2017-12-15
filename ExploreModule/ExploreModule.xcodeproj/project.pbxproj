@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E434C751FE42C6800953E2A /* ExploreCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434C731FE42C6800953E2A /* ExploreCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E434C761FE42C6800953E2A /* ExploreCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C741FE42C6800953E2A /* ExploreCoordinator.m */; };
+		6E434C881FE42E2C00953E2A /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E434C891FE42E2C00953E2A /* Utilities.framework */; };
 		6E4939641FD819870073788B /* ExploreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E49395A1FD819870073788B /* ExploreModule.framework */; };
 		6E4939691FD819870073788B /* ExploreModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939681FD819870073788B /* ExploreModuleTests.m */; };
 		6E49396B1FD819870073788B /* ExploreModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E49395D1FD819870073788B /* ExploreModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E4939A71FD81A820073788B /* ExploreViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939A41FD81A820073788B /* ExploreViewController.h */; };
+		6E4939A71FD81A820073788B /* ExploreViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939A41FD81A820073788B /* ExploreViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4939A81FD81A820073788B /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939A51FD81A820073788B /* ExploreViewController.m */; };
 		6E4939A91FD81A820073788B /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939A61FD81A820073788B /* ExploreViewController.xib */; };
 /* End PBXBuildFile section */
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E434C731FE42C6800953E2A /* ExploreCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreCoordinator.h; sourceTree = "<group>"; };
+		6E434C741FE42C6800953E2A /* ExploreCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreCoordinator.m; sourceTree = "<group>"; };
+		6E434C891FE42E2C00953E2A /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E49395A1FD819870073788B /* ExploreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExploreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E49395D1FD819870073788B /* ExploreModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreModule.h; sourceTree = "<group>"; };
 		6E49395E1FD819870073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434C881FE42E2C00953E2A /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E434C871FE42E2C00953E2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E434C891FE42E2C00953E2A /* Utilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E4939501FD819870073788B = {
 			isa = PBXGroup;
 			children = (
 				6E49395C1FD819870073788B /* ExploreModule */,
 				6E4939671FD819870073788B /* ExploreModuleTests */,
 				6E49395B1FD819870073788B /* Products */,
+				6E434C871FE42E2C00953E2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +98,8 @@
 				6E4939A41FD81A820073788B /* ExploreViewController.h */,
 				6E4939A51FD81A820073788B /* ExploreViewController.m */,
 				6E4939A61FD81A820073788B /* ExploreViewController.xib */,
+				6E434C731FE42C6800953E2A /* ExploreCoordinator.h */,
+				6E434C741FE42C6800953E2A /* ExploreCoordinator.m */,
 			);
 			path = ExploreModule;
 			sourceTree = "<group>";
@@ -103,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E49396B1FD819870073788B /* ExploreModule.h in Headers */,
+				6E434C751FE42C6800953E2A /* ExploreCoordinator.h in Headers */,
 				6E4939A71FD81A820073788B /* ExploreViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434C761FE42C6800953E2A /* ExploreCoordinator.m in Sources */,
 				6E4939A81FD81A820073788B /* ExploreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

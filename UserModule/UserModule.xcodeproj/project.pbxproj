@@ -21,10 +21,12 @@
 		6E3972BA1FE2B7C400EA8559 /* SignUpCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972B81FE2B7C400EA8559 /* SignUpCoordinator.m */; };
 		6E3972BD1FE2B82900EA8559 /* SignInCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972BB1FE2B82900EA8559 /* SignInCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3972BE1FE2B82900EA8559 /* SignInCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972BC1FE2B82900EA8559 /* SignInCoordinator.m */; };
+		6E434C6D1FE42C2700953E2A /* PersonalCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434C6B1FE42C2700953E2A /* PersonalCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E434C6E1FE42C2700953E2A /* PersonalCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C6C1FE42C2700953E2A /* PersonalCoordinator.m */; };
 		6E49390B1FD816F10073788B /* UserModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939011FD816F10073788B /* UserModule.framework */; };
 		6E4939101FD816F10073788B /* UserModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E49390F1FD816F10073788B /* UserModuleTests.m */; };
 		6E4939121FD816F10073788B /* UserModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939041FD816F10073788B /* UserModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E4939AE1FD81AC60073788B /* PersonalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939AB1FD81AC60073788B /* PersonalViewController.h */; };
+		6E4939AE1FD81AC60073788B /* PersonalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939AB1FD81AC60073788B /* PersonalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4939AF1FD81AC60073788B /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939AC1FD81AC60073788B /* PersonalViewController.m */; };
 		6E4939B01FD81AC60073788B /* PersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939AD1FD81AC60073788B /* PersonalViewController.xib */; };
 		6E4939B71FD81E6A0073788B /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939B51FD81E6A0073788B /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,6 +61,8 @@
 		6E3972B81FE2B7C400EA8559 /* SignUpCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpCoordinator.m; sourceTree = "<group>"; };
 		6E3972BB1FE2B82900EA8559 /* SignInCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInCoordinator.h; sourceTree = "<group>"; };
 		6E3972BC1FE2B82900EA8559 /* SignInCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInCoordinator.m; sourceTree = "<group>"; };
+		6E434C6B1FE42C2700953E2A /* PersonalCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalCoordinator.h; sourceTree = "<group>"; };
+		6E434C6C1FE42C2700953E2A /* PersonalCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalCoordinator.m; sourceTree = "<group>"; };
 		6E4939011FD816F10073788B /* UserModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4939041FD816F10073788B /* UserModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModule.h; sourceTree = "<group>"; };
 		6E4939051FD816F10073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 		6E4939AA1FD81AA00073788B /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				6E434C6B1FE42C2700953E2A /* PersonalCoordinator.h */,
+				6E434C6C1FE42C2700953E2A /* PersonalCoordinator.m */,
 				6E4939AB1FD81AC60073788B /* PersonalViewController.h */,
 				6E4939AC1FD81AC60073788B /* PersonalViewController.m */,
 				6E4939AD1FD81AC60073788B /* PersonalViewController.xib */,
@@ -238,9 +244,10 @@
 				6E3972901FE043F400EA8559 /* SignUpViewController.h in Headers */,
 				6E39728A1FE043E100EA8559 /* SignInViewController.h in Headers */,
 				6E3972BD1FE2B82900EA8559 /* SignInCoordinator.h in Headers */,
+				6E434C6D1FE42C2700953E2A /* PersonalCoordinator.h in Headers */,
+				6E4939AE1FD81AC60073788B /* PersonalViewController.h in Headers */,
 				6E4939121FD816F10073788B /* UserModule.h in Headers */,
 				6E4939B71FD81E6A0073788B /* User.h in Headers */,
-				6E4939AE1FD81AC60073788B /* PersonalViewController.h in Headers */,
 				6E39729D1FE179DF00EA8559 /* SignUpSupplementaryViewController.h in Headers */,
 				6E3972B91FE2B7C400EA8559 /* SignUpCoordinator.h in Headers */,
 			);
@@ -350,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434C6E1FE42C2700953E2A /* PersonalCoordinator.m in Sources */,
 				6E3972BA1FE2B7C400EA8559 /* SignUpCoordinator.m in Sources */,
 				6E39728B1FE043E100EA8559 /* SignInViewController.m in Sources */,
 				6E3972911FE043F400EA8559 /* SignUpViewController.m in Sources */,

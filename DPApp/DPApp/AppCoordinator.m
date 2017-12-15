@@ -7,7 +7,7 @@
 //
 
 #import "AppCoordinator.h"
-#import "MainViewController.h"
+#import "MainCoordinator.h"
 
 #import <UserModule/User.h>
 #import <UserModule/SignInCoordinator.h>
@@ -29,19 +29,9 @@
 }
 
 - (void)showMain {
-    
-    MainViewController *mainVC = [[MainViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    [self.baseViewController showChildViewController:nav];
-    //    [self.navigationController pushViewController:mainVC animated:NO];
-    //
-    [[AFHTTPSessionManager manager] GET:@"https://www.baidu.com" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@", responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@", error);
-    }];
+    MainCoordinator *mainCoordinator = [[MainCoordinator alloc] initWithBaseViewController:self.baseViewController];
+    [self addChildCoordinator:mainCoordinator];
+    [mainCoordinator start];
 }
 
 - (void)showLogin {
@@ -55,6 +45,7 @@
 
 // 登录成功
 - (void)coordinatorDidSignIn:(SignInCoordinator *)signInCoordinator {
+    [self removeChildCoordinator:signInCoordinator];
     [self showMain];
 }
 

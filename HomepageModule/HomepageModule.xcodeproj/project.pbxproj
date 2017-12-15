@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E434C711FE42C5600953E2A /* HomepageCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434C6F1FE42C5600953E2A /* HomepageCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E434C721FE42C5600953E2A /* HomepageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C701FE42C5600953E2A /* HomepageCoordinator.m */; };
+		6E434C8B1FE42E3500953E2A /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E434C8C1FE42E3500953E2A /* Utilities.framework */; };
 		6E4939401FD8196B0073788B /* HomepageModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939361FD8196B0073788B /* HomepageModule.framework */; };
 		6E4939451FD8196B0073788B /* HomepageModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939441FD8196B0073788B /* HomepageModuleTests.m */; };
 		6E4939471FD8196B0073788B /* HomepageModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939391FD8196B0073788B /* HomepageModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E49399B1FD81A5A0073788B /* HomepageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939981FD81A5A0073788B /* HomepageViewController.h */; };
+		6E49399B1FD81A5A0073788B /* HomepageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939981FD81A5A0073788B /* HomepageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E49399C1FD81A5A0073788B /* HomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939991FD81A5A0073788B /* HomepageViewController.m */; };
 		6E49399D1FD81A5A0073788B /* HomepageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E49399A1FD81A5A0073788B /* HomepageViewController.xib */; };
 /* End PBXBuildFile section */
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E434C6F1FE42C5600953E2A /* HomepageCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomepageCoordinator.h; sourceTree = "<group>"; };
+		6E434C701FE42C5600953E2A /* HomepageCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepageCoordinator.m; sourceTree = "<group>"; };
+		6E434C8C1FE42E3500953E2A /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4939361FD8196B0073788B /* HomepageModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomepageModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4939391FD8196B0073788B /* HomepageModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomepageModule.h; sourceTree = "<group>"; };
 		6E49393A1FD8196B0073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434C8B1FE42E3500953E2A /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E434C631FE4286E00953E2A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E4939981FD81A5A0073788B /* HomepageViewController.h */,
+				6E4939991FD81A5A0073788B /* HomepageViewController.m */,
+				6E49399A1FD81A5A0073788B /* HomepageViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6E434C641FE4288000953E2A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6E434C6F1FE42C5600953E2A /* HomepageCoordinator.h */,
+				6E434C701FE42C5600953E2A /* HomepageCoordinator.m */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6E434C8A1FE42E3500953E2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E434C8C1FE42E3500953E2A /* Utilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E49392C1FD8196B0073788B = {
 			isa = PBXGroup;
 			children = (
 				6E4939381FD8196B0073788B /* HomepageModule */,
 				6E4939431FD8196B0073788B /* HomepageModuleTests */,
 				6E4939371FD8196B0073788B /* Products */,
+				6E434C8A1FE42E3500953E2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +114,8 @@
 			children = (
 				6E4939391FD8196B0073788B /* HomepageModule.h */,
 				6E49393A1FD8196B0073788B /* Info.plist */,
-				6E4939981FD81A5A0073788B /* HomepageViewController.h */,
-				6E4939991FD81A5A0073788B /* HomepageViewController.m */,
-				6E49399A1FD81A5A0073788B /* HomepageViewController.xib */,
+				6E434C641FE4288000953E2A /* Coordinators */,
+				6E434C631FE4286E00953E2A /* ViewControllers */,
 			);
 			path = HomepageModule;
 			sourceTree = "<group>";
@@ -104,6 +138,7 @@
 			files = (
 				6E4939471FD8196B0073788B /* HomepageModule.h in Headers */,
 				6E49399B1FD81A5A0073788B /* HomepageViewController.h in Headers */,
+				6E434C711FE42C5600953E2A /* HomepageCoordinator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434C721FE42C5600953E2A /* HomepageCoordinator.m in Sources */,
 				6E49399C1FD81A5A0073788B /* HomepageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

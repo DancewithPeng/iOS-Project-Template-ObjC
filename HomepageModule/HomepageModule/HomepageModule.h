@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char HomepageModuleVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <HomepageModule/PublicHeader.h>
 
-
+#import <HomepageModule/HomepageCoordinator.h>
+#import <HomepageModule/HomepageViewController.h>

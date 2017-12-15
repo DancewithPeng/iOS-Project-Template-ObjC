@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E434C791FE42C8400953E2A /* CommunityCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434C771FE42C8400953E2A /* CommunityCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E434C7A1FE42C8400953E2A /* CommunityCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C781FE42C8400953E2A /* CommunityCoordinator.m */; };
+		6E434C851FE42E2000953E2A /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E434C861FE42E2000953E2A /* Utilities.framework */; };
 		6E4939881FD81A100073788B /* CommunityModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E49397E1FD81A100073788B /* CommunityModule.framework */; };
 		6E49398D1FD81A110073788B /* CommunityModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E49398C1FD81A110073788B /* CommunityModuleTests.m */; };
 		6E49398F1FD81A110073788B /* CommunityModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939811FD81A100073788B /* CommunityModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E4939A11FD81A6C0073788B /* CommunityViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E49399E1FD81A6C0073788B /* CommunityViewController.h */; };
+		6E4939A11FD81A6C0073788B /* CommunityViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E49399E1FD81A6C0073788B /* CommunityViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4939A21FD81A6C0073788B /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E49399F1FD81A6C0073788B /* CommunityViewController.m */; };
 		6E4939A31FD81A6C0073788B /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4939A01FD81A6C0073788B /* CommunityViewController.xib */; };
 /* End PBXBuildFile section */
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E434C771FE42C8400953E2A /* CommunityCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunityCoordinator.h; sourceTree = "<group>"; };
+		6E434C781FE42C8400953E2A /* CommunityCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunityCoordinator.m; sourceTree = "<group>"; };
+		6E434C861FE42E2000953E2A /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E49397E1FD81A100073788B /* CommunityModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommunityModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4939811FD81A100073788B /* CommunityModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunityModule.h; sourceTree = "<group>"; };
 		6E4939821FD81A100073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434C851FE42E2000953E2A /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E434C841FE42E2000953E2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E434C861FE42E2000953E2A /* Utilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E4939741FD81A100073788B = {
 			isa = PBXGroup;
 			children = (
 				6E4939801FD81A100073788B /* CommunityModule */,
 				6E49398B1FD81A110073788B /* CommunityModuleTests */,
 				6E49397F1FD81A100073788B /* Products */,
+				6E434C841FE42E2000953E2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +98,8 @@
 				6E49399E1FD81A6C0073788B /* CommunityViewController.h */,
 				6E49399F1FD81A6C0073788B /* CommunityViewController.m */,
 				6E4939A01FD81A6C0073788B /* CommunityViewController.xib */,
+				6E434C771FE42C8400953E2A /* CommunityCoordinator.h */,
+				6E434C781FE42C8400953E2A /* CommunityCoordinator.m */,
 			);
 			path = CommunityModule;
 			sourceTree = "<group>";
@@ -102,6 +120,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434C791FE42C8400953E2A /* CommunityCoordinator.h in Headers */,
 				6E49398F1FD81A110073788B /* CommunityModule.h in Headers */,
 				6E4939A11FD81A6C0073788B /* CommunityViewController.h in Headers */,
 			);
@@ -206,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434C7A1FE42C8400953E2A /* CommunityCoordinator.m in Sources */,
 				6E4939A21FD81A6C0073788B /* CommunityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char CommunityModuleVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CommunityModule/PublicHeader.h>
 
-
+#import <CommunityModule/CommunityViewController.h>
+#import <CommunityModule/CommunityCoordinator.h>

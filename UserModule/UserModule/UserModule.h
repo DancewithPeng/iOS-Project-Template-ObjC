@@ -19,3 +19,5 @@ FOUNDATION_EXPORT const unsigned char UserModuleVersionString[];
 
 #import <UserModule/User.h>
 #import <UserModule/SignInCoordinator.h>
+#import <UserModule/PersonalCoordinator.h>
+#import <UserModule/PersonalViewController.h>

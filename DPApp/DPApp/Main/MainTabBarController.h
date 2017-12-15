@@ -1,13 +1,13 @@
 //
-//  MainViewController.h
+//  MainTabBarController.h
 //  DPApp
 //
-//  Created by DancewithPeng on 2017/12/6.
+//  Created by 张鹏 on 2017/12/16.
 //  Copyright © 2017年 dancewithpeng@gmail.com. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainTabBarController : UITabBarController
 
 @end

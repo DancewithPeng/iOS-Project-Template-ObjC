@@ -1,22 +1,22 @@
 //
-//  HomepageViewController.m
-//  HomepageModule
+//  MainTabBarController.m
+//  DPApp
 //
-//  Created by DancewithPeng on 2017/12/6.
+//  Created by 张鹏 on 2017/12/16.
 //  Copyright © 2017年 dancewithpeng@gmail.com. All rights reserved.
 //
 
-#import "HomepageViewController.h"
+#import "MainTabBarController.h"
 
-@interface HomepageViewController ()
+@interface MainTabBarController ()
 
 @end
 
-@implementation HomepageViewController
+@implementation MainTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

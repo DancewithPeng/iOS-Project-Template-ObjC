@@ -1,24 +1,24 @@
 //
-//  MainViewController.m
-//  DPApp
+//  HomepageViewController.m
+//  HomepageModule
 //
 //  Created by DancewithPeng on 2017/12/6.
 //  Copyright © 2017年 dancewithpeng@gmail.com. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "HomepageViewController.h"
 
-@interface MainViewController ()
+@interface HomepageViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation HomepageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationItem.title = @"主页";
-    
+    NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
 - (void)didReceiveMemoryWarning {
