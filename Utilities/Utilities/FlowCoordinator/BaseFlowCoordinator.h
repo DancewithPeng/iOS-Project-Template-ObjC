@@ -1,25 +1,24 @@
 //
-//  BaseFlowController.h
+//  BaseFlowCoordinator.h
 //  Utilities
 //
-//  Created by 张鹏 on 2017/12/13.
+//  Created by DancewithPeng on 2017/12/14.
 //  Copyright © 2017年 dancewithpeng@gmail.com. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "FlowController.h"
+#import "FlowCoordinator.h"
 
-@interface BaseFlowController : NSObject <FlowController>
+@interface BaseFlowCoordinator : NSObject <FlowCoordinator>
 
+#pragma mark - FlowCoordinator
 
-#pragma mark - FlowController
-
-@property (nonatomic, readonly) NSArray<id<FlowController>> *childControllers;
+@property (nonatomic, readonly) NSArray<id<FlowCoordinator>> *childCoordinators;
 
 - (void)start;
 
-- (void)addChildController:(id<FlowController>)childController;
-- (void)removeChildController:(id<FlowController>)childController;
+- (void)addChildCoordinator:(id<FlowCoordinator>)childCoordinator;
+- (void)removeChildCoordinator:(id<FlowCoordinator>)childCoordinator;
 
 
 #pragma mark - Extension
@@ -44,10 +43,10 @@
 
 
 /**
- 初始化方法，并制定基础控制器
-
+ 初始化方法，并指定基础控制器
+ 
  @param baseViewController 基础控制器
- @return 初始化号的对象
+ @return 返回初始化完成的对象
  */
 - (instancetype)initWithBaseViewController:(UIViewController *)baseViewController;
 

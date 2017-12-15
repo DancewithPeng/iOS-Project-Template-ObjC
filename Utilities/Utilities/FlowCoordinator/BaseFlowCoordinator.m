@@ -1,23 +1,24 @@
 //
-//  BaseFlowController.m
+//  BaseFlowCoordinator.m
 //  Utilities
 //
-//  Created by 张鹏 on 2017/12/13.
+//  Created by DancewithPeng on 2017/12/14.
 //  Copyright © 2017年 dancewithpeng@gmail.com. All rights reserved.
 //
 
-#import "BaseFlowController.h"
+#import "BaseFlowCoordinator.h"
 
-@interface BaseFlowController ()
+@interface BaseFlowCoordinator ()
 
 /**
- 子控制器
- */
-@property (nonatomic, strong) NSMutableArray *privateChildControllers;
+子协调
+*/
+@property (nonatomic, strong) NSMutableArray *privateChildCoordinators;
+
 
 @end
 
-@implementation BaseFlowController
+@implementation BaseFlowCoordinator
 
 @synthesize baseViewController = _baseViewController;
 
@@ -38,16 +39,16 @@
     [NSException raise:@"BasicFlowController Exception" format:@"subclass must implement this method: %s",           __PRETTY_FUNCTION__];
 }
 
-- (NSArray<id<FlowController>> *)childControllers {
-    return self.privateChildControllers;
+- (NSArray<id<FlowCoordinator>> *)childCoordinators {
+    return self.privateChildCoordinators;
 }
 
-- (void)addChildController:(id<FlowController>)childController {
-    [self.privateChildControllers addObject:childController];
+- (void)addChildCoordinator:(id<FlowCoordinator>)childCoordinator {
+    [self.privateChildCoordinators addObject:childCoordinator];
 }
 
-- (void)removeChildController:(id<FlowController>)childController {
-    [self.privateChildControllers removeObject:childController];
+- (void)removeChildCoordinator:(id<FlowCoordinator>)childCoordinator {
+    [self.privateChildCoordinators removeObject:childCoordinator];
 }
 
 - (UINavigationController *)navigationController {
@@ -69,12 +70,12 @@
 
 #pragma mark - Getter
 
-- (NSMutableArray *)privateChildControllers {
-    if (_privateChildControllers == nil) {
-        _privateChildControllers = [[NSMutableArray alloc] init];
+- (NSMutableArray *)privateChildCoordinators {
+    if (_privateChildCoordinators == nil) {
+        _privateChildCoordinators = [[NSMutableArray alloc] init];
     }
     
-    return _privateChildControllers;
+    return _privateChildCoordinators;
 }
 
 @end

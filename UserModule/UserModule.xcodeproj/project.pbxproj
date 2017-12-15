@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E3972851FE043CA00EA8559 /* SignInController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972831FE043CA00EA8559 /* SignInController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E3972861FE043CA00EA8559 /* SignInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972841FE043CA00EA8559 /* SignInController.m */; };
 		6E39728A1FE043E100EA8559 /* SignInViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972871FE043E100EA8559 /* SignInViewController.h */; };
 		6E39728B1FE043E100EA8559 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972881FE043E100EA8559 /* SignInViewController.m */; };
 		6E39728C1FE043E100EA8559 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3972891FE043E100EA8559 /* SignInViewController.xib */; };
 		6E3972901FE043F400EA8559 /* SignUpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E39728D1FE043F400EA8559 /* SignUpViewController.h */; };
 		6E3972911FE043F400EA8559 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E39728E1FE043F400EA8559 /* SignUpViewController.m */; };
 		6E3972921FE043F400EA8559 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E39728F1FE043F400EA8559 /* SignUpViewController.xib */; };
-		6E3972951FE0440400EA8559 /* SignUpController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972931FE0440400EA8559 /* SignUpController.h */; };
-		6E3972961FE0440400EA8559 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972941FE0440400EA8559 /* SignUpController.m */; };
 		6E39729D1FE179DF00EA8559 /* SignUpSupplementaryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E39729A1FE179DF00EA8559 /* SignUpSupplementaryViewController.h */; };
 		6E39729E1FE179DF00EA8559 /* SignUpSupplementaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E39729B1FE179DF00EA8559 /* SignUpSupplementaryViewController.m */; };
 		6E39729F1FE179DF00EA8559 /* SignUpSupplementaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E39729C1FE179DF00EA8559 /* SignUpSupplementaryViewController.xib */; };
+		6E3972B21FE2B29700EA8559 /* Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3972B31FE2B29700EA8559 /* Basics.framework */; };
+		6E3972B91FE2B7C400EA8559 /* SignUpCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972B71FE2B7C400EA8559 /* SignUpCoordinator.h */; };
+		6E3972BA1FE2B7C400EA8559 /* SignUpCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972B81FE2B7C400EA8559 /* SignUpCoordinator.m */; };
+		6E3972BD1FE2B82900EA8559 /* SignInCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972BB1FE2B82900EA8559 /* SignInCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E3972BE1FE2B82900EA8559 /* SignInCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972BC1FE2B82900EA8559 /* SignInCoordinator.m */; };
 		6E49390B1FD816F10073788B /* UserModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4939011FD816F10073788B /* UserModule.framework */; };
 		6E4939101FD816F10073788B /* UserModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E49390F1FD816F10073788B /* UserModuleTests.m */; };
 		6E4939121FD816F10073788B /* UserModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939041FD816F10073788B /* UserModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,19 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E3972831FE043CA00EA8559 /* SignInController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInController.h; sourceTree = "<group>"; };
-		6E3972841FE043CA00EA8559 /* SignInController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInController.m; sourceTree = "<group>"; };
 		6E3972871FE043E100EA8559 /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		6E3972881FE043E100EA8559 /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		6E3972891FE043E100EA8559 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		6E39728D1FE043F400EA8559 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		6E39728E1FE043F400EA8559 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		6E39728F1FE043F400EA8559 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
-		6E3972931FE0440400EA8559 /* SignUpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
-		6E3972941FE0440400EA8559 /* SignUpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
 		6E39729A1FE179DF00EA8559 /* SignUpSupplementaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpSupplementaryViewController.h; sourceTree = "<group>"; };
 		6E39729B1FE179DF00EA8559 /* SignUpSupplementaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpSupplementaryViewController.m; sourceTree = "<group>"; };
 		6E39729C1FE179DF00EA8559 /* SignUpSupplementaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpSupplementaryViewController.xib; sourceTree = "<group>"; };
+		6E3972B31FE2B29700EA8559 /* Basics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Basics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3972B71FE2B7C400EA8559 /* SignUpCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpCoordinator.h; sourceTree = "<group>"; };
+		6E3972B81FE2B7C400EA8559 /* SignUpCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpCoordinator.m; sourceTree = "<group>"; };
+		6E3972BB1FE2B82900EA8559 /* SignInCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInCoordinator.h; sourceTree = "<group>"; };
+		6E3972BC1FE2B82900EA8559 /* SignInCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInCoordinator.m; sourceTree = "<group>"; };
 		6E4939011FD816F10073788B /* UserModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4939041FD816F10073788B /* UserModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModule.h; sourceTree = "<group>"; };
 		6E4939051FD816F10073788B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3972B21FE2B29700EA8559 /* Basics.framework in Frameworks */,
 				6E4939DA1FD831540073788B /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,8 +143,8 @@
 		6E49391D1FD817C00073788B /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				6E3972831FE043CA00EA8559 /* SignInController.h */,
-				6E3972841FE043CA00EA8559 /* SignInController.m */,
+				6E3972BB1FE2B82900EA8559 /* SignInCoordinator.h */,
+				6E3972BC1FE2B82900EA8559 /* SignInCoordinator.m */,
 				6E7C7EDE1FE03D020021C005 /* ViewControllers */,
 			);
 			path = SignIn;
@@ -177,6 +180,7 @@
 		6E4939D91FD831540073788B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E3972B31FE2B29700EA8559 /* Basics.framework */,
 				6E4939DB1FD831540073788B /* Utilities.framework */,
 			);
 			name = Frameworks;
@@ -194,8 +198,8 @@
 		6E7C7ED21FE03C6F0021C005 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				6E3972931FE0440400EA8559 /* SignUpController.h */,
-				6E3972941FE0440400EA8559 /* SignUpController.m */,
+				6E3972B71FE2B7C400EA8559 /* SignUpCoordinator.h */,
+				6E3972B81FE2B7C400EA8559 /* SignUpCoordinator.m */,
 				6E7C7EDD1FE03CF40021C005 /* ViewControllers */,
 			);
 			path = SignUp;
@@ -231,14 +235,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E3972851FE043CA00EA8559 /* SignInController.h in Headers */,
 				6E3972901FE043F400EA8559 /* SignUpViewController.h in Headers */,
 				6E39728A1FE043E100EA8559 /* SignInViewController.h in Headers */,
+				6E3972BD1FE2B82900EA8559 /* SignInCoordinator.h in Headers */,
 				6E4939121FD816F10073788B /* UserModule.h in Headers */,
-				6E3972951FE0440400EA8559 /* SignUpController.h in Headers */,
 				6E4939B71FD81E6A0073788B /* User.h in Headers */,
 				6E4939AE1FD81AC60073788B /* PersonalViewController.h in Headers */,
 				6E39729D1FE179DF00EA8559 /* SignUpSupplementaryViewController.h in Headers */,
+				6E3972B91FE2B7C400EA8559 /* SignUpCoordinator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,12 +350,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3972BA1FE2B7C400EA8559 /* SignUpCoordinator.m in Sources */,
 				6E39728B1FE043E100EA8559 /* SignInViewController.m in Sources */,
 				6E3972911FE043F400EA8559 /* SignUpViewController.m in Sources */,
 				6E4939AF1FD81AC60073788B /* PersonalViewController.m in Sources */,
 				6E4939B81FD81E6A0073788B /* User.m in Sources */,
-				6E3972861FE043CA00EA8559 /* SignInController.m in Sources */,
-				6E3972961FE0440400EA8559 /* SignUpController.m in Sources */,
+				6E3972BE1FE2B82900EA8559 /* SignInCoordinator.m in Sources */,
 				6E39729E1FE179DF00EA8559 /* SignUpSupplementaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

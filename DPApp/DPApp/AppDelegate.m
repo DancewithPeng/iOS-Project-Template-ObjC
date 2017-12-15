@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "AppController.h"
+#import "AppCoordinator.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong) AppController *appController;
+@property (nonatomic, strong) AppCoordinator *appCoordinator;
 
 @end
 
@@ -23,8 +23,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[UIViewController alloc] init];
     
-    self.appController = [[AppController alloc] initWithBaseViewController:self.window.rootViewController];
-    [self.appController start];
+    self.appCoordinator = [[AppCoordinator alloc] initWithBaseViewController:self.window.rootViewController];
+    [self.appCoordinator start];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
