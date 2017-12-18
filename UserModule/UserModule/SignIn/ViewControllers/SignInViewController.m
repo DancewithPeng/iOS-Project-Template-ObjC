@@ -8,6 +8,30 @@
 
 #import "SignInViewController.h"
 
+@interface MyLabel : UILabel
+@end
+
+@implementation MyLabel
+
+- (void)dealloc {
+    NSLog(@"👻👻👻 - %p", self);
+}
+
+@end
+
+@interface UILabel (test)
+
+
+@end
+
+@implementation UILabel (test)
+
+//- (void)dealloc {
+//    NSLog(@"😂😂😂 - %p", self);
+//}
+
+@end
+
 @interface SignInViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTF;
@@ -23,6 +47,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"登陆";
+    
+    MyLabel *aLabel = [[MyLabel alloc] initWithFrame:CGRectMake(0, 80, 320, 60)];
+    aLabel.font = [UIFont systemFontOfSize:30];
+    aLabel.text = @"Hello World! kdkdkdkdkd";
+    aLabel.dynamic = YES;
+    [self.view addSubview:aLabel];
+    
+    MyLabel *aLabel2 = [[MyLabel alloc] initWithFrame:CGRectMake(0, 150, 320, 60)];
+    aLabel2.font = [UIFont systemFontOfSize:30];
+    aLabel2.text = @"Hello World! kdkdkdkdkd";
+    aLabel2.dynamic = YES;
+    [self.view addSubview:aLabel2];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -35,6 +71,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CGFloat newSize = arc4random() % 50 + 30;
+    [[DynamicFontManager defaultManager] updateFontSize:newSize forType:nil];
 }
 
 
@@ -56,6 +97,10 @@
     if ([self.delegate respondsToSelector:@selector(signUp)]) {
         [self.delegate signUp];
     }
+}
+
+- (void)dealloc {
+    NSLog(@"好吧吧吧");
 }
 
 @end

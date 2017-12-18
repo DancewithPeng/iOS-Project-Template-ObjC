@@ -7,6 +7,7 @@
 //
 
 #import "PersonalViewController.h"
+#import <Utilities/DynamicFontManager.h>
 
 @interface PersonalViewController ()
 
@@ -18,6 +19,22 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"个人中心";
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CGFloat newSize = arc4random()%100 + 50;
+    [[DynamicFontManager defaultManager] updateFontSize:newSize forType:nil];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
     NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 

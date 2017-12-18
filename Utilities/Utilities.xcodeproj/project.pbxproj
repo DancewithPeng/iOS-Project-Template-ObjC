@@ -19,6 +19,19 @@
 		6E3972AE1FE29CA100EA8559 /* BaseFlowCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972AC1FE29CA100EA8559 /* BaseFlowCoordinator.m */; };
 		6E3CAFDD1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3CAFDB1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3CAFDE1FE12023007CD1E4 /* UIViewController+ShowChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3CAFDC1FE12023007CD1E4 /* UIViewController+ShowChildViewController.m */; };
+		6E434C901FE4CC6700953E2A /* UILabel+DynamicFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434C8E1FE4CC6700953E2A /* UILabel+DynamicFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E434C911FE4CC6700953E2A /* UILabel+DynamicFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C8F1FE4CC6700953E2A /* UILabel+DynamicFont.m */; };
+		6E434C941FE4CD4600953E2A /* DynamicFontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434C921FE4CD4600953E2A /* DynamicFontManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E434C951FE4CD4600953E2A /* DynamicFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C931FE4CD4600953E2A /* DynamicFontManager.m */; };
+		6E434C991FE4E28900953E2A /* NSObject+Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434C971FE4E28900953E2A /* NSObject+Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E434C9A1FE4E28900953E2A /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C981FE4E28900953E2A /* NSObject+Runtime.m */; };
+		6E434C9D1FE519BD00953E2A /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434C9B1FE519BD00953E2A /* JRSwizzle.h */; };
+		6E434C9E1FE519BD00953E2A /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C9C1FE519BD00953E2A /* JRSwizzle.m */; };
+		6E434CA11FE5257F00953E2A /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434C9F1FE5257F00953E2A /* GCDMulticastDelegate.m */; };
+		6E434CA21FE5257F00953E2A /* GCDMulticastDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434CA01FE5257F00953E2A /* GCDMulticastDelegate.h */; };
+		6E434CA61FE58E2800953E2A /* DPWeakSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E434CA41FE58E2800953E2A /* DPWeakSet.h */; };
+		6E434CA71FE58E2800953E2A /* DPWeakSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434CA51FE58E2800953E2A /* DPWeakSet.m */; };
+		6E434CA91FE64AB900953E2A /* DPWeakSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E434CA81FE64AB800953E2A /* DPWeakSetTests.m */; };
 		6E4939D71FD82F260073788B /* UIViewController+FrameworkNib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939D51FD82F260073788B /* UIViewController+FrameworkNib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4939D81FD82F260073788B /* UIViewController+FrameworkNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939D61FD82F260073788B /* UIViewController+FrameworkNib.m */; };
 		6E4939E21FD834160073788B /* UIImage+FrameworkNib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939E01FD834160073788B /* UIImage+FrameworkNib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +67,19 @@
 		6E3972AC1FE29CA100EA8559 /* BaseFlowCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseFlowCoordinator.m; sourceTree = "<group>"; };
 		6E3CAFDB1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShowChildViewController.h"; sourceTree = "<group>"; };
 		6E3CAFDC1FE12023007CD1E4 /* UIViewController+ShowChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ShowChildViewController.m"; sourceTree = "<group>"; };
+		6E434C8E1FE4CC6700953E2A /* UILabel+DynamicFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicFont.h"; sourceTree = "<group>"; };
+		6E434C8F1FE4CC6700953E2A /* UILabel+DynamicFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicFont.m"; sourceTree = "<group>"; };
+		6E434C921FE4CD4600953E2A /* DynamicFontManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicFontManager.h; sourceTree = "<group>"; };
+		6E434C931FE4CD4600953E2A /* DynamicFontManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicFontManager.m; sourceTree = "<group>"; };
+		6E434C971FE4E28900953E2A /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		6E434C981FE4E28900953E2A /* NSObject+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		6E434C9B1FE519BD00953E2A /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		6E434C9C1FE519BD00953E2A /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		6E434C9F1FE5257F00953E2A /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		6E434CA01FE5257F00953E2A /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
+		6E434CA41FE58E2800953E2A /* DPWeakSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPWeakSet.h; sourceTree = "<group>"; };
+		6E434CA51FE58E2800953E2A /* DPWeakSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPWeakSet.m; sourceTree = "<group>"; };
+		6E434CA81FE64AB800953E2A /* DPWeakSetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPWeakSetTests.m; sourceTree = "<group>"; };
 		6E4939D51FD82F260073788B /* UIViewController+FrameworkNib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FrameworkNib.h"; sourceTree = "<group>"; };
 		6E4939D61FD82F260073788B /* UIViewController+FrameworkNib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FrameworkNib.m"; sourceTree = "<group>"; };
 		6E4939E01FD834160073788B /* UIImage+FrameworkNib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FrameworkNib.h"; sourceTree = "<group>"; };
@@ -118,6 +144,9 @@
 			children = (
 				6E24E3341FD8145B00A90C45 /* Utilities.h */,
 				6E24E3351FD8145B00A90C45 /* Info.plist */,
+				6E434CA31FE58DF200953E2A /* DPWeakSet */,
+				6E434C961FE4E25500953E2A /* Runtime */,
+				6E434C8D1FE4CC1500953E2A /* Font */,
 				6E3972971FE0465800EA8559 /* FlowCoordinator */,
 				6E4939E61FD840230073788B /* FrameworkResources */,
 				6E4939D41FD82EDB0073788B /* ViewController */,
@@ -133,6 +162,7 @@
 			children = (
 				6E24E33F1FD8145C00A90C45 /* UtilitiesTests.m */,
 				6E24E3411FD8145C00A90C45 /* Info.plist */,
+				6E434CA81FE64AB800953E2A /* DPWeakSetTests.m */,
 			);
 			path = UtilitiesTests;
 			sourceTree = "<group>";
@@ -145,6 +175,39 @@
 				6E3972AC1FE29CA100EA8559 /* BaseFlowCoordinator.m */,
 			);
 			path = FlowCoordinator;
+			sourceTree = "<group>";
+		};
+		6E434C8D1FE4CC1500953E2A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6E434C8E1FE4CC6700953E2A /* UILabel+DynamicFont.h */,
+				6E434C8F1FE4CC6700953E2A /* UILabel+DynamicFont.m */,
+				6E434C921FE4CD4600953E2A /* DynamicFontManager.h */,
+				6E434C931FE4CD4600953E2A /* DynamicFontManager.m */,
+				6E434CA01FE5257F00953E2A /* GCDMulticastDelegate.h */,
+				6E434C9F1FE5257F00953E2A /* GCDMulticastDelegate.m */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		6E434C961FE4E25500953E2A /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				6E434C971FE4E28900953E2A /* NSObject+Runtime.h */,
+				6E434C981FE4E28900953E2A /* NSObject+Runtime.m */,
+				6E434C9B1FE519BD00953E2A /* JRSwizzle.h */,
+				6E434C9C1FE519BD00953E2A /* JRSwizzle.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		6E434CA31FE58DF200953E2A /* DPWeakSet */ = {
+			isa = PBXGroup;
+			children = (
+				6E434CA41FE58E2800953E2A /* DPWeakSet.h */,
+				6E434CA51FE58E2800953E2A /* DPWeakSet.m */,
+			);
+			path = DPWeakSet;
 			sourceTree = "<group>";
 		};
 		6E4938D11FD815E80073788B /* Date */ = {
@@ -210,10 +273,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4939E21FD834160073788B /* UIImage+FrameworkNib.h in Headers */,
+				6E434C9D1FE519BD00953E2A /* JRSwizzle.h in Headers */,
 				6E4939D71FD82F260073788B /* UIViewController+FrameworkNib.h in Headers */,
 				6E3972A21FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h in Headers */,
 				6E3972AD1FE29CA100EA8559 /* BaseFlowCoordinator.h in Headers */,
+				6E434CA61FE58E2800953E2A /* DPWeakSet.h in Headers */,
+				6E434C901FE4CC6700953E2A /* UILabel+DynamicFont.h in Headers */,
+				6E434C941FE4CD4600953E2A /* DynamicFontManager.h in Headers */,
+				6E434C991FE4E28900953E2A /* NSObject+Runtime.h in Headers */,
 				6E4939E81FD840A50073788B /* CurrentBundle.h in Headers */,
+				6E434CA21FE5257F00953E2A /* GCDMulticastDelegate.h in Headers */,
 				6E3972AA1FE29C5600EA8559 /* FlowCoordinator.h in Headers */,
 				6E3CAFDD1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h in Headers */,
 				6E24E3421FD8145C00A90C45 /* Utilities.h in Headers */,
@@ -412,8 +481,14 @@
 			files = (
 				6E4939E31FD834160073788B /* UIImage+FrameworkNib.m in Sources */,
 				6E3972AE1FE29CA100EA8559 /* BaseFlowCoordinator.m in Sources */,
+				6E434C951FE4CD4600953E2A /* DynamicFontManager.m in Sources */,
 				6E3CAFDE1FE12023007CD1E4 /* UIViewController+ShowChildViewController.m in Sources */,
+				6E434CA11FE5257F00953E2A /* GCDMulticastDelegate.m in Sources */,
+				6E434C9A1FE4E28900953E2A /* NSObject+Runtime.m in Sources */,
+				6E434C911FE4CC6700953E2A /* UILabel+DynamicFont.m in Sources */,
+				6E434CA71FE58E2800953E2A /* DPWeakSet.m in Sources */,
 				6E4939D81FD82F260073788B /* UIViewController+FrameworkNib.m in Sources */,
+				6E434C9E1FE519BD00953E2A /* JRSwizzle.m in Sources */,
 				6E3972A31FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E434CA91FE64AB900953E2A /* DPWeakSetTests.m in Sources */,
 				6E24E3401FD8145C00A90C45 /* UtilitiesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

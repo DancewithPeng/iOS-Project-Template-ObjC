@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Utilities/UILabel+DynamicFont.h>
 
 typedef void(^SignInFinished)(BOOL isSuccess, NSError *error);
 
