@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef void(^FlowCompletionHandler)(BOOL isFinished, id userInfo, NSError *error);
+
+
 /**
  流程协调器
  这是一个接口，规定了流程协调器必须实现的方法
@@ -19,11 +23,30 @@
  */
 @property (nonatomic, readonly) NSArray<id<FlowCoordinator>> *childCoordinators;
 
+/**
+ 流程完成的回调
+ */
+@property (nonatomic, copy, readonly) FlowCompletionHandler completion;
+
 
 /**
- 流程开始
+ 开始流程
  */
-- (void)start;
+- (void)startWithCompletion:(FlowCompletionHandler)completion;
+
+/**
+ 取消流程
+
+ @param error 错误信息
+ */
+- (void)cancelWithError:(NSError *)error;
+
+/**
+ 完成流程
+
+ @param userInfo 用户信息
+ */
+- (void)finishWithInfo:(id)userInfo;
 
 
 /**

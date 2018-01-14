@@ -8,19 +8,6 @@
 
 #import <Utilities/Utilities.h>
 
-@class SignInCoordinator;
-@protocol SignInCoordinatorDelegate <NSObject>
-
-// 登录成功
-- (void)coordinatorDidSignIn:(SignInCoordinator *)signInCoordinator;
-
-// 取消
-- (void)coordinatorDidCancel:(SignInCoordinator *)signInCoordinator;
-
-@end
-
 @interface SignInCoordinator : BaseFlowCoordinator
-
-@property (nonatomic, weak) id<SignInCoordinatorDelegate> delegate;
 
 @end

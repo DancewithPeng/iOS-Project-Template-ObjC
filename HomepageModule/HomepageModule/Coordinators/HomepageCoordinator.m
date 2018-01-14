@@ -13,9 +13,40 @@
 
 @implementation HomepageCoordinator
 
-- (void)start {
-    HomepageViewController *homepageVC = [HomepageViewController viewControllerWithNib];    
+- (void)startWithCompletion:(FlowCompletionHandler)completion {
+    [super startWithCompletion:completion];
+    
+    HomepageViewController *homepageVC = [HomepageViewController viewControllerWithNib];
+    [homepageVC addHooker:self];
     [self.navigationController pushViewController:homepageVC animated:NO];
 }
+
+
+#pragma mark - UIViewControllerLifeCycleHooker
+
+- (void)viewControllerViewDidLoad:(UIViewController *)viewController {
+    NSLog(@"%s, %@", __PRETTY_FUNCTION__, viewController);
+}
+
+- (void)viewController:(UIViewController *)viewController viewWillAppear:(BOOL)animated {
+    NSLog(@"%s, %@", __PRETTY_FUNCTION__,  viewController);
+}
+
+- (void)viewController:(UIViewController *)viewController viewDidAppear:(BOOL)animated {
+    NSLog(@"%s, %@", __PRETTY_FUNCTION__,  viewController);
+}
+
+- (void)viewController:(UIViewController *)viewController viewWillDisappear:(BOOL)animated {
+    NSLog(@"%s, %@", __PRETTY_FUNCTION__,  viewController);
+}
+
+- (void)viewController:(UIViewController *)viewController viewDidDisappear:(BOOL)animated {
+    NSLog(@"%s, %@", __PRETTY_FUNCTION__,  viewController);
+}
+
+- (void)viewControllerDealloc:(UIViewController *)viewController {
+    NSLog(@"%s, %@", __PRETTY_FUNCTION__,  viewController);
+}
+
 
 @end

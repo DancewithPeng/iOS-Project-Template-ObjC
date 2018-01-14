@@ -16,6 +16,7 @@
 		6E24E3051FD8139F00A90C45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24E3041FD8139F00A90C45 /* main.m */; };
 		6E24E30F1FD813A000A90C45 /* DPAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24E30E1FD813A000A90C45 /* DPAppTests.m */; };
 		6E24E31A1FD813A000A90C45 /* DPAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24E3191FD813A000A90C45 /* DPAppUITests.m */; };
+		6E32BA07200A5E8C0023C5B9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E32BA06200A5E8C0023C5B9 /* RootViewController.m */; };
 		6E3972B11FE29F2C00EA8559 /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972B01FE29F2C00EA8559 /* AppCoordinator.m */; };
 		6E3972B51FE2B66600EA8559 /* Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3972B41FE2B66600EA8559 /* Basics.framework */; };
 		6E3972B61FE2B66600EA8559 /* Basics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3972B41FE2B66600EA8559 /* Basics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -92,6 +93,8 @@
 		6E24E3151FD813A000A90C45 /* DPAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E24E3191FD813A000A90C45 /* DPAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppUITests.m; sourceTree = "<group>"; };
 		6E24E31B1FD813A000A90C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E32BA05200A5E8C0023C5B9 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		6E32BA06200A5E8C0023C5B9 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		6E3972AF1FE29F2C00EA8559 /* AppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
 		6E3972B01FE29F2C00EA8559 /* AppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
 		6E3972B41FE2B66600EA8559 /* Basics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Basics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +183,7 @@
 				6E24E2F61FD8139F00A90C45 /* AppDelegate.m */,
 				6E3972AF1FE29F2C00EA8559 /* AppCoordinator.h */,
 				6E3972B01FE29F2C00EA8559 /* AppCoordinator.m */,
+				6E32BA04200A5E500023C5B9 /* Root */,
 				6E49391B1FD817970073788B /* Guide */,
 				6E49391C1FD817B20073788B /* Main */,
 				6E24E2F81FD8139F00A90C45 /* ViewController.h */,
@@ -209,6 +213,15 @@
 				6E24E31B1FD813A000A90C45 /* Info.plist */,
 			);
 			path = DPAppUITests;
+			sourceTree = "<group>";
+		};
+		6E32BA04200A5E500023C5B9 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6E32BA05200A5E8C0023C5B9 /* RootViewController.h */,
+				6E32BA06200A5E8C0023C5B9 /* RootViewController.m */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		6E49391B1FD817970073788B /* Guide */ = {
@@ -460,10 +473,12 @@
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-DPApp/Pods-DPApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,6 +512,7 @@
 			files = (
 				6E24E2FA1FD8139F00A90C45 /* ViewController.m in Sources */,
 				6E434C6A1FE42A5900953E2A /* MainTabBarController.m in Sources */,
+				6E32BA07200A5E8C0023C5B9 /* RootViewController.m in Sources */,
 				6E3972B11FE29F2C00EA8559 /* AppCoordinator.m in Sources */,
 				6E4939271FD818070073788B /* GuideViewController.m in Sources */,
 				6E24E3051FD8139F00A90C45 /* main.m in Sources */,

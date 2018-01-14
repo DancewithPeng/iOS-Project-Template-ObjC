@@ -29,14 +29,6 @@
     return element;
 }
 
-//- (BOOL)isEqual:(id)object {
-//    return [self hash] == [object hash];
-//}
-//
-//- (NSUInteger)hash {
-//    return self.compareHash;
-//}
-
 - (NSString *)description {
     return [self.weakObject description];
 }

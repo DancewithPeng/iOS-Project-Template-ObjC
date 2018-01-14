@@ -14,44 +14,34 @@
 #import <Utilities/UIViewController+ShowChildViewController.h>
 #import <AFNetworking/AFNetworking.h>
 
-@interface AppCoordinator () <SignInCoordinatorDelegate>
+@interface AppCoordinator ()
 
 @end
 
 @implementation AppCoordinator
 
-- (void)start {
-    if ([User currentUser].isLogin == YES) {
-        [self showMain];
-    } else {
-        [self showLogin];
-    }
+- (void)startWithCompletion:(FlowCompletionHandler)completion {
+    [super startWithCompletion:completion];
+    
+    [self showMain];
 }
 
 - (void)showMain {
+    
     MainCoordinator *mainCoordinator = [[MainCoordinator alloc] initWithBaseViewController:self.baseViewController];
     [self addChildCoordinator:mainCoordinator];
-    [mainCoordinator start];
+        
+    [mainCoordinator startWithCompletion:nil];
+//    [mainCoordinator start];
 }
 
 - (void)showLogin {
     SignInCoordinator *signInCoordinator = [[SignInCoordinator alloc] initWithBaseViewController:self.baseViewController];
-    signInCoordinator.delegate = self;
     [self addChildCoordinator:signInCoordinator];
-    [signInCoordinator start];
+//    [signInCoordinator start];
 }
 
 #pragma mark - SignInCoordinatorDelegate
 
-// 登录成功
-- (void)coordinatorDidSignIn:(SignInCoordinator *)signInCoordinator {
-    [self removeChildCoordinator:signInCoordinator];
-    [self showMain];
-}
-
-// 取消
-- (void)coordinatorDidCancel:(SignInCoordinator *)signInCoordinator {
-    
-}
 
 @end

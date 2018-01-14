@@ -25,3 +25,5 @@ FOUNDATION_EXPORT const unsigned char UtilitiesVersionString[];
 #import <Utilities/UILabel+DynamicFont.h>
 #import <Utilities/DynamicFontManager.h>
 #import <Utilities/NSObject+Runtime.h>
+#import <Utilities/UIViewController+LifeCycleHook.h>
+#import <Utilities/DPWeakSet.h>

@@ -8,17 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "FlowCoordinator.h"
+#import "UIViewController+LifeCycleHook.h"
 
-@interface BaseFlowCoordinator : NSObject <FlowCoordinator>
+@interface BaseFlowCoordinator : NSObject <FlowCoordinator, UIViewControllerLifeCycleHooker>
 
 #pragma mark - FlowCoordinator
 
 @property (nonatomic, readonly) NSArray<id<FlowCoordinator>> *childCoordinators;
+@property (nonatomic, copy) FlowCompletionHandler completion;
 
-- (void)start;
+- (void)startWithCompletion:(FlowCompletionHandler)completion;
+- (void)cancelWithError:(NSError *)error;
+- (void)finishWithInfo:(id)userInfo;
 
 - (void)addChildCoordinator:(id<FlowCoordinator>)childCoordinator;
 - (void)removeChildCoordinator:(id<FlowCoordinator>)childCoordinator;
+
 
 
 #pragma mark - Extension

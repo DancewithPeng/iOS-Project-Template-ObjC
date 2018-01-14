@@ -35,8 +35,22 @@
 
 #pragma mark - Interfaces
 
-- (void)start {
-    [NSException raise:@"BasicFlowController Exception" format:@"subclass must implement this method: %s",           __PRETTY_FUNCTION__];
+- (void)startWithCompletion:(FlowCompletionHandler)completion {
+    self.completion = completion;
+}
+
+- (void)cancelWithError:(NSError *)error {
+    if (self.completion != nil) {
+        self.completion(NO, nil, error);
+        self.completion = nil;
+    }
+}
+
+- (void)finishWithInfo:(id)userInfo {
+    if (self.completion != nil) {
+        self.completion(YES, userInfo, nil);
+        self.completion = nil;
+    }
 }
 
 - (NSArray<id<FlowCoordinator>> *)childCoordinators {

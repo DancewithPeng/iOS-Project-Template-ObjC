@@ -16,9 +16,19 @@
 #import <CommunityModule/CommunityCoordinator.h>
 #import <UserModule/PersonalCoordinator.h>
 
+@interface MainCoordinator ()
+
+@end
+
 @implementation MainCoordinator
 
-- (void)start {
+- (void)startWithCompletion:(FlowCompletionHandler)completion {
+    [super startWithCompletion:completion];
+    
+    [self showTabBarController];
+}
+
+- (void)showTabBarController {
     
     // 显示主页面
     MainTabBarController *tabBarController = [[MainTabBarController alloc] init];
@@ -44,10 +54,10 @@
     CommunityCoordinator *communityCoordinator = [[CommunityCoordinator alloc] initWithBaseViewController:communityNav];
     PersonalCoordinator *personalCoordinator = [[PersonalCoordinator alloc] initWithBaseViewController:personalNav];
     
-    [homepageCoordinator start];
-    [exploreCoordinator start];
-    [communityCoordinator start];
-    [personalCoordinator start];
+    [homepageCoordinator startWithCompletion:nil];
+    [exploreCoordinator startWithCompletion:nil];
+    [communityCoordinator startWithCompletion:nil];
+    [personalCoordinator startWithCompletion:nil];
 }
 
 @end

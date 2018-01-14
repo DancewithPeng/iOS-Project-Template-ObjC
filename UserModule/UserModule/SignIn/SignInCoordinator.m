@@ -17,7 +17,15 @@
 
 @implementation SignInCoordinator
 
-- (void)start {
+- (void)startWithCompletion:(FlowCompletionHandler)completion {
+    [super startWithCompletion:completion];
+    
+    [self showLoginPage];
+}
+
+#pragma mark - Flow
+
+- (void)showLoginPage {
     
     // 显示登录页面
     SignInViewController *signVC = [SignInViewController viewControllerWithNib];
@@ -27,6 +35,16 @@
     self.signVC = signVC;
 }
 
+//- (void)start {
+//
+//    // 显示登录页面
+//    SignInViewController *signVC = [SignInViewController viewControllerWithNib];
+//    signVC.delegate = self;
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:signVC];
+//    [self.baseViewController showChildViewController:nav];
+//    self.signVC = signVC;
+//}
+
 #pragma mark - SignInViewControllerDelegate
 
 // 登录
@@ -35,13 +53,17 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 登录成功
         
+        if (finishedHanlder != nil) {
+            finishedHanlder(YES, nil);
+        }
+        
         // 隐藏登录界面
         [self.signVC.navigationController hideFromParentViewController];
         
-        // 回调
-        if ([self.delegate respondsToSelector:@selector(coordinatorDidSignIn:)]) {
-            [self.delegate coordinatorDidSignIn:self];
-        }
+//        // 回调
+//        if ([self.delegate respondsToSelector:@selector(coordinatorDidSignIn:)]) {
+//            [self.delegate coordinatorDidSignIn:self];
+//        }
     });
 }
 

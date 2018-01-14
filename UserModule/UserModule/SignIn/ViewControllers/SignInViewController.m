@@ -7,6 +7,7 @@
 //
 
 #import "SignInViewController.h"
+#import <Basics/ProgressHUD.h>
 
 @interface MyLabel : UILabel
 @end
@@ -59,7 +60,10 @@
     aLabel2.text = @"Hello World! kdkdkdkdkd";
     aLabel2.dynamic = YES;
     [self.view addSubview:aLabel2];
+    
+    
 }
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -81,14 +85,20 @@
 
 - (IBAction)signInBtnDidClicked:(id)sender {
     if ([self.delegate respondsToSelector:@selector(signInWithUsername:password:finished:)]) {
+        
+        [ProgressHUD show];
+        
         [self.delegate signInWithUsername:self.usernameTF.text password:self.passwordTF.text finished:^(BOOL isSuccess, NSError *error) {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"登陆成功" preferredStyle:UIAlertControllerStyleAlert];
+        
+            [ProgressHUD dismiss];
             
-            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                
-            }]];
+//            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"登陆成功" preferredStyle:UIAlertControllerStyleAlert];
+//
+//            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//
+//            }]];
             
-            [self presentViewController:alert animated:YES completion:nil];
+//            [self presentViewController:alert animated:YES completion:nil];
         }];
     }
 }

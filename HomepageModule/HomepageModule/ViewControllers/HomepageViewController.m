@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"主页";
-    NSLog(@"%s", __PRETTY_FUNCTION__);
+//    NSLog(@"%s", __PRETTY_FUNCTION__);
     
     UILabel *testLabel = [[UILabel alloc] initWithFrame:self.view.bounds];
     testLabel.font = [UIFont systemFontOfSize:100];
