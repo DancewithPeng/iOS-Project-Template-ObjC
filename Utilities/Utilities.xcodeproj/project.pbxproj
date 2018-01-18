@@ -14,6 +14,8 @@
 		6E24E3421FD8145C00A90C45 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E24E3341FD8145B00A90C45 /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E32BA57200C0D730023C5B9 /* UIViewController+LifeCycleHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E32BA55200C0D730023C5B9 /* UIViewController+LifeCycleHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E32BA58200C0D730023C5B9 /* UIViewController+LifeCycleHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E32BA56200C0D730023C5B9 /* UIViewController+LifeCycleHook.m */; };
+		6E32BA5C2010F8AF0023C5B9 /* DPAlertAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E32BA5A2010F8AF0023C5B9 /* DPAlertAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E32BA5D2010F8AF0023C5B9 /* DPAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E32BA5B2010F8AF0023C5B9 /* DPAlertAnimation.m */; };
 		6E3972A21FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972A01FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3972A31FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972A11FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m */; };
 		6E3972AA1FE29C5600EA8559 /* FlowCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3972A91FE29C5600EA8559 /* FlowCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +66,8 @@
 		6E24E3411FD8145C00A90C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E32BA55200C0D730023C5B9 /* UIViewController+LifeCycleHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LifeCycleHook.h"; sourceTree = "<group>"; };
 		6E32BA56200C0D730023C5B9 /* UIViewController+LifeCycleHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LifeCycleHook.m"; sourceTree = "<group>"; };
+		6E32BA5A2010F8AF0023C5B9 /* DPAlertAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAlertAnimation.h; sourceTree = "<group>"; };
+		6E32BA5B2010F8AF0023C5B9 /* DPAlertAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAlertAnimation.m; sourceTree = "<group>"; };
 		6E3972A01FE182E900EA8559 /* UIViewController+NavigationControllerSequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationControllerSequence.h"; sourceTree = "<group>"; };
 		6E3972A11FE182E900EA8559 /* UIViewController+NavigationControllerSequence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationControllerSequence.m"; sourceTree = "<group>"; };
 		6E3972A91FE29C5600EA8559 /* FlowCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowCoordinator.h; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			children = (
 				6E24E3341FD8145B00A90C45 /* Utilities.h */,
 				6E24E3351FD8145B00A90C45 /* Info.plist */,
+				6E32BA592010F8890023C5B9 /* Animations */,
 				6E434CA31FE58DF200953E2A /* DPWeakSet */,
 				6E434C961FE4E25500953E2A /* Runtime */,
 				6E434C8D1FE4CC1500953E2A /* Font */,
@@ -169,6 +174,15 @@
 				6E434CA81FE64AB800953E2A /* DPWeakSetTests.m */,
 			);
 			path = UtilitiesTests;
+			sourceTree = "<group>";
+		};
+		6E32BA592010F8890023C5B9 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				6E32BA5A2010F8AF0023C5B9 /* DPAlertAnimation.h */,
+				6E32BA5B2010F8AF0023C5B9 /* DPAlertAnimation.m */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		6E3972971FE0465800EA8559 /* FlowCoordinator */ = {
@@ -289,6 +303,7 @@
 				6E32BA57200C0D730023C5B9 /* UIViewController+LifeCycleHook.h in Headers */,
 				6E4939E81FD840A50073788B /* CurrentBundle.h in Headers */,
 				6E434CA61FE58E2800953E2A /* DPWeakSet.h in Headers */,
+				6E32BA5C2010F8AF0023C5B9 /* DPAlertAnimation.h in Headers */,
 				6E434CA21FE5257F00953E2A /* GCDMulticastDelegate.h in Headers */,
 				6E3972AA1FE29C5600EA8559 /* FlowCoordinator.h in Headers */,
 				6E3CAFDD1FE12023007CD1E4 /* UIViewController+ShowChildViewController.h in Headers */,
@@ -488,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E32BA5D2010F8AF0023C5B9 /* DPAlertAnimation.m in Sources */,
 				6E4939E31FD834160073788B /* UIImage+FrameworkNib.m in Sources */,
 				6E3972AE1FE29CA100EA8559 /* BaseFlowCoordinator.m in Sources */,
 				6E434C951FE4CD4600953E2A /* DynamicFontManager.m in Sources */,

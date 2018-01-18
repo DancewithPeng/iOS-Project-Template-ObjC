@@ -11,7 +11,9 @@
 
 @implementation ExploreCoordinator
 
-- (void)start {
+- (void)startWithCompletion:(FlowCompletionHandler)completion {
+    [super startWithCompletion:completion];
+    
     ExploreViewController *exploreVC = [ExploreViewController viewControllerWithNib];
     [self.navigationController pushViewController:exploreVC animated:NO];
 }

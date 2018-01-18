@@ -103,16 +103,17 @@
 }
 
 - (void)_dp_swizzle_dealloc {
+    
+//    [self.hookerSet enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
+//        id<UIViewControllerLifeCycleHooker> hooker = obj;
+//        if ([hooker respondsToSelector:@selector(viewControllerDealloc:)]) {
+//            [hooker viewControllerDealloc:self];
+//        }
+//    }];
+    
     [self _dp_swizzle_dealloc];
     
     NSLog(@"%s", __PRETTY_FUNCTION__);
-    
-    [self.hookerSet enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<UIViewControllerLifeCycleHooker> hooker = obj;
-        if ([hooker respondsToSelector:@selector(viewControllerDealloc:)]) {
-            [hooker viewControllerDealloc:self];
-        }
-    }];
 }
 
 

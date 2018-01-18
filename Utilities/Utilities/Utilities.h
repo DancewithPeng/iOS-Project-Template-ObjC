@@ -27,3 +27,4 @@ FOUNDATION_EXPORT const unsigned char UtilitiesVersionString[];
 #import <Utilities/NSObject+Runtime.h>
 #import <Utilities/UIViewController+LifeCycleHook.h>
 #import <Utilities/DPWeakSet.h>
+#import <Utilities/DPAlertAnimation.h>
