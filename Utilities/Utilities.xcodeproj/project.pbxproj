@@ -41,6 +41,10 @@
 		6E4939E21FD834160073788B /* UIImage+FrameworkNib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939E01FD834160073788B /* UIImage+FrameworkNib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4939E31FD834160073788B /* UIImage+FrameworkNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4939E11FD834160073788B /* UIImage+FrameworkNib.m */; };
 		6E4939E81FD840A50073788B /* CurrentBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4939E71FD840A50073788B /* CurrentBundle.h */; };
+		6ECF564E201369450086EBFA /* DPRollBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECF564C201369450086EBFA /* DPRollBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ECF564F201369450086EBFA /* DPRollBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECF564D201369450086EBFA /* DPRollBar.m */; };
+		6ECF565220136A6F0086EBFA /* DPRollBarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECF565020136A6F0086EBFA /* DPRollBarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ECF565320136A6F0086EBFA /* DPRollBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECF565120136A6F0086EBFA /* DPRollBarCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,10 @@
 		6E4939E01FD834160073788B /* UIImage+FrameworkNib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FrameworkNib.h"; sourceTree = "<group>"; };
 		6E4939E11FD834160073788B /* UIImage+FrameworkNib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FrameworkNib.m"; sourceTree = "<group>"; };
 		6E4939E71FD840A50073788B /* CurrentBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentBundle.h; sourceTree = "<group>"; };
+		6ECF564C201369450086EBFA /* DPRollBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPRollBar.h; sourceTree = "<group>"; };
+		6ECF564D201369450086EBFA /* DPRollBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPRollBar.m; sourceTree = "<group>"; };
+		6ECF565020136A6F0086EBFA /* DPRollBarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPRollBarCell.h; sourceTree = "<group>"; };
+		6ECF565120136A6F0086EBFA /* DPRollBarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPRollBarCell.m; sourceTree = "<group>"; };
 		782CD9522A086B9F69576DE3 /* Pods_UtilitiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UtilitiesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59F6665A91B83C6D069FD27 /* Pods_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,6 +160,7 @@
 			children = (
 				6E24E3341FD8145B00A90C45 /* Utilities.h */,
 				6E24E3351FD8145B00A90C45 /* Info.plist */,
+				6ECF564B201369240086EBFA /* RollBar */,
 				6E32BA592010F8890023C5B9 /* Animations */,
 				6E434CA31FE58DF200953E2A /* DPWeakSet */,
 				6E434C961FE4E25500953E2A /* Runtime */,
@@ -274,6 +283,17 @@
 			path = FrameworkResources;
 			sourceTree = "<group>";
 		};
+		6ECF564B201369240086EBFA /* RollBar */ = {
+			isa = PBXGroup;
+			children = (
+				6ECF564C201369450086EBFA /* DPRollBar.h */,
+				6ECF564D201369450086EBFA /* DPRollBar.m */,
+				6ECF565020136A6F0086EBFA /* DPRollBarCell.h */,
+				6ECF565120136A6F0086EBFA /* DPRollBarCell.m */,
+			);
+			path = RollBar;
+			sourceTree = "<group>";
+		};
 		A4E7D19665F3C8531708EF8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,7 +322,9 @@
 				6E434C991FE4E28900953E2A /* NSObject+Runtime.h in Headers */,
 				6E32BA57200C0D730023C5B9 /* UIViewController+LifeCycleHook.h in Headers */,
 				6E4939E81FD840A50073788B /* CurrentBundle.h in Headers */,
+				6ECF564E201369450086EBFA /* DPRollBar.h in Headers */,
 				6E434CA61FE58E2800953E2A /* DPWeakSet.h in Headers */,
+				6ECF565220136A6F0086EBFA /* DPRollBarCell.h in Headers */,
 				6E32BA5C2010F8AF0023C5B9 /* DPAlertAnimation.h in Headers */,
 				6E434CA21FE5257F00953E2A /* GCDMulticastDelegate.h in Headers */,
 				6E3972AA1FE29C5600EA8559 /* FlowCoordinator.h in Headers */,
@@ -503,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ECF564F201369450086EBFA /* DPRollBar.m in Sources */,
 				6E32BA5D2010F8AF0023C5B9 /* DPAlertAnimation.m in Sources */,
 				6E4939E31FD834160073788B /* UIImage+FrameworkNib.m in Sources */,
 				6E3972AE1FE29CA100EA8559 /* BaseFlowCoordinator.m in Sources */,
@@ -510,6 +533,7 @@
 				6E3CAFDE1FE12023007CD1E4 /* UIViewController+ShowChildViewController.m in Sources */,
 				6E434CA11FE5257F00953E2A /* GCDMulticastDelegate.m in Sources */,
 				6E434C9A1FE4E28900953E2A /* NSObject+Runtime.m in Sources */,
+				6ECF565320136A6F0086EBFA /* DPRollBarCell.m in Sources */,
 				6E434C911FE4CC6700953E2A /* UILabel+DynamicFont.m in Sources */,
 				6E434CA71FE58E2800953E2A /* DPWeakSet.m in Sources */,
 				6E32BA58200C0D730023C5B9 /* UIViewController+LifeCycleHook.m in Sources */,
